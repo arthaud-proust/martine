@@ -20,7 +20,7 @@
           <h1 ref="name" contenteditable="true" class="w-min text-8xl ">
             martine
           </h1>
-          <h2 ref="title" contenteditable="true" class="text-3xl text-right mb-1">Est à la montagne</h2>
+          <h2 ref="title" contenteditable="true" class="text-3xl text-right mb-1">à la montagne</h2>
         </header>
         
         <img :src="img" class="w-full"/>
