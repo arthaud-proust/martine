@@ -54,15 +54,12 @@ const download = ()=>{
   const titleValue = title.value?.innerText ?? "fait quelque chose"
   if(!coverValue) return
 
-  console.log(coverValue)
   domtoimage.toJpeg(coverValue, { quality: 1 })
     .then(function (dataUrl) {
-      console.log(dataUrl)
         const link = document.createElement('a');
         link.download = `${nameValue} ${titleValue}.jpeg`;
         link.href = dataUrl;
         link.click();
     })
-    .catch(e=>console.log(e))
 }
 </script>
